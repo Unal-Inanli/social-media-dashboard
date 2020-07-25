@@ -60,17 +60,31 @@
 
         mainCounters.forEach(function (element) {
             var counterValue = parseInt(element.innerHTML);
+            var shortSuffix = null;
             var interval = 25;
-            var rate = parseInt(counterValue / (interval * 2));
             element.innerHTML = 0;
+
+            if (counterValue > 10000 && counterValue < 1000000) {
+                counterValue = parseInt(counterValue / 1000);
+                shortSuffix = "K";
+            } else if (counterValue > 1000000 && counterValue < 1000000000) {
+                counterValue = parseInt(counterValue / 1000000)
+                shortSuffix = "M";
+            } else if (counterValue > 1000000000) {
+                counterValue = parseInt(counterValue / 1000000000);
+                shortSuffix = "B";
+            }
+
+
+            var rate = parseInt(counterValue / (interval * 2));
 
 
             var myInt = setInterval(function () {
 
                 if (parseInt(element.innerHTML) < counterValue - rate) {
-                    element.innerHTML = parseInt(element.innerHTML) + rate
+                    element.innerHTML = parseInt(element.innerHTML) + rate + shortSuffix;
                 } else {
-                    element.innerHTML = counterValue;
+                    element.innerHTML = counterValue + shortSuffix;
                     clearInterval(myInt);
                 }
             }, interval)
