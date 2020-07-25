@@ -1,0 +1,100 @@
+.social-media {
+
+    &__container {
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        
+        border-radius: 0.3rem;
+        width: 100%;
+        background: var(--bgCL);
+        display:flex;
+        flex-flow:column;
+        align-items: center;
+      
+
+        &__border {
+            height: 6px;
+            width: 100%;
+            border-top-left-radius: 0.3rem;
+            border-top-right-radius: 0.3rem;
+
+              
+            &--facebook {
+                background: $facebook;
+            }
+
+            &--twitter {
+                background: $twitter;
+            }
+
+            &--youtube {
+            background: $youtube;
+            }
+
+            &--instagram {
+                background: $instagram;
+            
+            }
+        }
+
+
+        &__header {
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content: space-between;
+            padding: 2rem 0rem;
+            align-items: center;
+        }
+
+        &__name {
+            color: var(--textL);
+            font-weight:700;
+            margin-left: 0.5rem;
+        }
+
+        &__body {
+            text-align: center;
+        }
+
+        &__main-counter {
+            margin: 0;
+            margin-bottom: 0.5rem;
+            font-size: 5rem;
+            color: var(--textDL);
+        }
+
+        &__subtitle {
+            letter-spacing: 4px;
+            color: var(--textL);
+        }
+
+        &__footer {
+            padding: 2rem 0rem;
+            display:flex;
+            flex-flow:row nowrap;
+            align-items: center;
+            &__counter {
+                color:$limeGreen;
+                margin-left: 0.65rem;
+                font-weight: 700;
+
+           
+            }
+        }
+
+        &__container {
+            flex-grow: 1;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 320px;
+            max-width: 100%;
+        }
+    }
+ }

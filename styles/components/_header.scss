@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+
+    @include phone {
+        flex-flow: column-reverse;
+    }
+
+    &__title-container {
+        @include phone {
+            text-align: center;
+
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+        color: var(--textDL);
+    }
+
+    &__subtitle {
+        color: var(--textL);
+        font-weight: 700;
+       
+    }
+
+
+    &__theme-toggle-container {
+        display:flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        @include phone {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-self: flex-end;
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: var(--bgL);
+    display:flex;
+        flex-flow: column;
+        align-items: center;
+    &__bg {
+        position: absolute;
+        height: 325px;
+        background: var(--bgTL);
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__main {
+        max-width: 1440px;
+        margin: auto 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__body {
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+
+    &__attribution {
+        padding-bottom: 2rem;
+        color: var(--textDL);
+
+        a {
+            color: var(--textL);
+        }
+    }
+
+}

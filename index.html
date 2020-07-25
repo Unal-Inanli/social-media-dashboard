@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="app">
+  <div class="app__bg"></div>
+
+  <div class="app__main">
+
+    <div class="header">
+      <div class="header__title-container">
+        <h2 class="header__title">
+          Social Media Dashboard
+        </h2>
+        <span class="header__subtitle">
+          Total Followers: 23,004
+        </span>
+      </div>
+
+      <div class="header__theme-toggle-container">
+        <span class="theme-toggle__text">Dark Mode</span>
+        <div id="theme-toggle" class="theme-toggle__button">
+          <div id="theme-circle" class="theme-toggle__circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app__body">
+      <div class="social-media__container">
+        <div class="social-media__card__container">
+          <div class="social-media__card ">
+            <div class="social-media__card__border social-media__card__border--facebook"></div>
+
+            <div class="social-media__card__header">
+              <span class="social-media__card__header__icon bg-icon_facebook"></span>
+              <span class="social-media__card__name">@unal</span>
+            </div>
+
+            <div class="social-media__card__body">
+              <h1 class="social-media__card__main-counter">1987</h1>
+              <span class="social-media__card__subtitle">FOLLOWERS</span>
+            </div>
+
+            <div class="social-media__card__footer">
+              <span class="bg-icon_up"></span>
+              <span class="social-media__card__footer__counter">12 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-media__card__container">
+          <div class="social-media__card ">
+            <div class="social-media__card__border social-media__card__border--twitter"></div>
+
+            <div class="social-media__card__header">
+              <span class="social-media__card__header__icon bg-icon_twitter"></span>
+              <span class="social-media__card__name">@unal</span>
+            </div>
+            <div class="social-media__card__body">
+              <h1 class="social-media__card__main-counter">5342</h1>
+              <span class="social-media__card__subtitle">FOLLOWERS</span>
+            </div>
+
+            <div class="social-media__card__footer">
+              <span class="bg-icon_up"></span>
+              <span class="social-media__card__footer__counter">12 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-media__card__container">
+          <div class="social-media__card">
+            <div class="social-media__card__border social-media__card__border--instagram"></div>
+            <div class="social-media__card__header">
+              <span class="social-media__card__header__icon bg-icon_instagram"></span>
+              <span class="social-media__card__name">@unal</span>
+            </div>
+            <div class="social-media__card__body">
+              <h1 class="social-media__card__main-counter">91323</h1>
+              <span class="social-media__card__subtitle">FOLLOWERS</span>
+            </div>
+
+            <div class="social-media__card__footer">
+              <span class="bg-icon_up"></span>
+              <span class="social-media__card__footer__counter">12 Today</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media__card__container">
+          <div class="social-media__card">
+            <div class="social-media__card__border social-media__card__border--youtube"></div>
+
+            <div class="social-media__card__header">
+              <span class="social-media__card__header__icon bg-icon_youtube"></span>
+              <span class="social-media__card__name">@unal</span>
+            </div>
+            <div class="social-media__card__body">
+              <h1 class="social-media__card__main-counter">5237</h1>
+              <span class="social-media__card__subtitle">FOLLOWERS</span>
+            </div>
+
+            <div class="social-media__card__footer">
+              <span class="bg-icon_down"></span>
+              <span class="social-media__card__footer__counter text--red">-5 Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container--flex-column container--align-center container--spacing">
+        <div class="section__title__container">
+          <h1 class="section__title">Overview - Today</h1>
+        </div>
+
+        <div class="container container--justify-between container--wrap">
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_facebook"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_down"></div>
+                  <span class="overview__card__stats-text text--red">13%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_facebook"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_up"></div>
+                  <span class="overview__card__stats-text">13%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_instagram"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_up"></div>
+                  <span class="overview__card__stats-text">13%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_instagram"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_down"></div>
+                  <span class="overview__card__stats-text text--red">23%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_twitter"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_up"></div>
+                  <span class="overview__card__stats-text">13%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_twitter"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_up"></div>
+                  <span class="overview__card__stats-text">72%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_youtube"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_up"></div>
+                  <span class="overview__card__stats-text">25%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card__container">
+            <div class="overview__card">
+              <div class="overview__card__left">
+                <div class="overview__card__title">
+                  Likes
+                </div>
+                <h2 class="overview__card__data">7327</h2>
+              </div>
+              <div class="overview__card__right">
+                <div class="bg-icon_youtube"></div>
+                <div class="overview__card__stats">
+                  <div class="bg-icon_down"></div>
+                  <span class="overview__card__stats-text text--red">200%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="app__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Unal-Inanli">Unal</a>.
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
