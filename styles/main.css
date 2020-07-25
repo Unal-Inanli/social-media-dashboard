@@ -453,7 +453,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 0.3rem;
   min-width: 300px;
 }
